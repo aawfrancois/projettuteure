@@ -20,7 +20,7 @@ app.use('/', index);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
 	 res.status = 404;
-	res.json({err: 'NOT FOUNd'})
+	res.json({err: 'NOT FOUND'})
 });
 
 // error handler
