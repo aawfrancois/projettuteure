@@ -2,8 +2,12 @@
   "name": "projet-tuteure",
   "version": "0.0.0",
   "private": true,
+  "description": "Community about social apps",
+  "repositoy": "https://github.com/aawfrancois/projettuteure",
+  "author": "Antoine Francois <antoinefrancois95@gmail.com>",
   "scripts": {
-    "start": "DEBUG=Projet_tuteure:server PORT=8080 node ./bin/www"
+    "dev": "DEBUG=Projet_tuteure:server PORT=8080 nodemon ./bin/www",
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -12,6 +16,7 @@
     "express": "~4.15.5",
     "jade": "~1.11.0",
     "morgan": "~1.9.0",
+    "nodemon": "^1.17.1",
     "serve-favicon": "~2.4.5"
   }
 }
